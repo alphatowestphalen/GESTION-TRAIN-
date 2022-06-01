@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pnTrain" prefHeight="519.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.Train.ControlerTrain">
+   <children>
+      <TableView fx:id="tableTrain" layoutX="10.0" layoutY="71.0" onMouseClicked="#getSelect" prefHeight="460.0" prefWidth="649.0" style="-fx-background-color: #A1BAC2;">
+         <columns>
+            <TableColumn fx:id="NumTrain_col" prefWidth="113.0" text="Numero Train " />
+            <TableColumn fx:id="DesingationTrain_col" prefWidth="183.0" text="Desingation" />
+            <TableColumn fx:id="NombraPlace_col" prefWidth="202.0" text="Nombre Place" />
+            <TableColumn fx:id="NumraoItineraire_col" prefWidth="175.0" text="Numero Itineraire" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtRech" layoutX="133.0" layoutY="22.0" onAction="#champRecherche" onDragDetected="#teste" onKeyReleased="#recherche" prefHeight="30.0" prefWidth="517.0" promptText="Recherche...." style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #205072;" />
+      <Button fx:id="AddTrain" layoutX="17.0" layoutY="21.0" mnemonicParsing="false" onAction="#AddTrain" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #205072;" text="AddTrain" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../../Public/Image/ok.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="-18.0" top="-0.5" />
+         </padding>
+      </Button>
+   </children>
+</Pane>

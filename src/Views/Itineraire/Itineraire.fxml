@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="519.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.Itineraire.ControlerIti">
+   <children>
+      <TableView fx:id="tableIti" layoutX="2.0" layoutY="59.0" onMouseClicked="#AjouterValeurAuLogin" prefHeight="454.0" prefWidth="661.0">
+        <columns>
+          <TableColumn fx:id="NumItiCol" prefWidth="150.0" text="Numero Itineraire" />
+          <TableColumn fx:id="VilleDepartCol" minWidth="0.0" prefWidth="191.0" text="Ville de Depart" />
+            <TableColumn fx:id="VilleArrive" minWidth="0.0" prefWidth="206.0" text="Ville Arrivée" />
+            <TableColumn fx:id="Frais" minWidth="0.0" prefWidth="130.0" text="Frais" />
+        </columns>
+      </TableView>
+      <Button fx:id="AddIti" layoutX="5.0" layoutY="16.0" mnemonicParsing="false" onAction="#AddIti" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #205072;" text="AddItineraire" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../../Public/Image/ok.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="-18.0" top="-0.5" />
+         </padding>
+      </Button>
+      <TextField fx:id="txtRech" layoutX="130.0" layoutY="16.0" onKeyReleased="#recherches" prefHeight="30.0" prefWidth="528.0" promptText="Serch . . ." style="-fx-background-color: transparent; -fx-border-color: #205072; -fx-border-width: 0 0 2px 0;" />
+   </children>
+</Pane>

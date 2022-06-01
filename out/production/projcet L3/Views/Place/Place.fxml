@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.Place.CotrolerPlace">
+   <children>
+      <Pane layoutX="286.0" layoutY="-62.0" prefHeight="255.0" prefWidth="373.0" rotate="37.9" style="-fx-background-color: #205072; -fx-background-radius: 80;" />
+      <Pane layoutX="98.0" layoutY="68.0" prefHeight="442.0" prefWidth="674.0">
+         <children>
+            <TableView fx:id="TableViewPlace" layoutX="11.0" layoutY="87.0" onMouseClicked="#recupererValeurAjoutAuImput" prefHeight="355.0" prefWidth="635.0">
+              <columns>
+                <TableColumn fx:id="numTrainCol" prefWidth="184.0" text="Numero Train " />
+                <TableColumn fx:id="numPlaceCol" prefWidth="210.0" text="Numero Place" />
+                  <TableColumn fx:id="occupationCol" prefWidth="178.0" text="Occuppation" />
+              </columns>
+            </TableView>
+            <Button fx:id="AddPlace" layoutX="11.0" layoutY="48.0" mnemonicParsing="false" onAction="#AddPlace" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #205072;" text="AddPlace" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="28.0">
+                     <image>
+                        <Image url="@../../Public/Image/ok.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="-18.0" top="-0.5" />
+               </padding>
+            </Button>
+            <TextField layoutX="128.0" layoutY="51.0" prefHeight="25.0" prefWidth="340.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pnRes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.Reservation.ControlerReservation">
+   <children>
+      <TableView fx:id="tableRes" layoutY="60.0" onMouseClicked="#afficherLogin" prefHeight="452.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="numResCol" prefWidth="123.0" text="Numero Reservation" />
+          <TableColumn fx:id="numTrainCol" prefWidth="115.0" text="Numero Train" />
+            <TableColumn fx:id="numPlaceCol" prefWidth="138.0" text="Numero Place" />
+            <TableColumn fx:id="dateResCol" prefWidth="134.0" text="Date Reservation" />
+            <TableColumn fx:id="nomVoyCol" prefWidth="172.0" text="Nom Voyager" />
+        </columns>
+      </TableView>
+      <Button fx:id="AddRes" layoutX="18.0" layoutY="22.0" mnemonicParsing="false" onAction="#AddRes" prefHeight="30.0" prefWidth="148.0" style="-fx-background-color: #205072;" text="AddReservation" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../../Public/Image/ok.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="-18.0" top="-0.5" />
+         </padding>
+      </Button>
+      <TextField fx:id="txtRech" layoutX="179.0" layoutY="22.0" onKeyTyped="#recherche" prefHeight="30.0" prefWidth="474.0" promptText="Serch . . ." style="-fx-background-color: transparent; -fx-border-color: #205072; -fx-border-width: 0 0 2px 0;" />
+   </children>
+</Pane>

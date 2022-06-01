@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pnHomes" prefHeight="518.0" prefWidth="906.0" stylesheets="@../../Public/CSS/App.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Home.ControlerHome">
+   <children>
+      <VBox cache="true" layoutX="-1.0" layoutY="-1.0" prefHeight="519.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;">
+         <children>
+            <Pane prefHeight="120.0" prefWidth="151.0" style="-fx-background-color: #205072;">
+               <children>
+                  <ImageView fitHeight="61.0" fitWidth="62.0" layoutX="9.0" layoutY="20.0">
+                     <image>
+                        <Image url="@../../Public/Image/Train.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelString" layoutX="83.0" layoutY="38.0" prefHeight="35.0" prefWidth="107.0" text="TRAIN" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="home" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clickHome" prefHeight="33.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;" text="HOME">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="12.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="24.0">
+                     <image>
+                        <Image url="@../../Public/Image/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="train" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clickTrain" prefHeight="33.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;" text="TRAIN">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../../Public/Image/trian2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="itineraire" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clickItineraire" prefHeight="33.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;" text="ITINERAIRE" textOverrun="CENTER_ELLIPSIS">
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="25.0" nodeOrientation="INHERIT">
+                     <image>
+                        <Image url="@../../Public/Image/itineraire.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="resevation" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clickRes" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;" text="RESERVATION">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" nodeOrientation="INHERIT">
+                     <image>
+                        <Image url="@../../Public/Image/voyager.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="voyageur" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#clickVoyageur" prefHeight="27.0" prefWidth="240.0" style="-fx-background-color: #A1BAC2;" text="VOYAGEUR">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="30.0" nodeOrientation="INHERIT">
+                     <image>
+                        <Image url="@../../Public/Image/voyager.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="pnHome" layoutX="242.0" prefHeight="519.0" prefWidth="666.0">
+         <children>
+            <Pane layoutX="413.0" layoutY="140.0" prefHeight="247.0" prefWidth="247.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="close" fitHeight="20.0" fitWidth="24.0" layoutX="882.0" layoutY="3.0" onMouseClicked="#closed" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+         <image>
+            <Image url="@../../Public/Image/plus.png" />
+         </image>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
